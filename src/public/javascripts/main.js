@@ -52,4 +52,29 @@ class Deck {
       this.swapCardsPosition(i, ic);
     }
   }
+
+  findCardPosition(card) {
+    return this.cards
+    .findIndex(x => x.number === card.number && x.suit === card.suit);
+  }
+
+  swapCardsPosition(pos1, pos2) {
+    const x = this.cards[pos1];
+    this.cards[pos1] = this.cards[pos2];
+    this.cards[pos2] = x;
+  }
+
+  clean() {
+    this.cards = [];
+  }
+
+  generate() {
+    this.clean();
+    for (let isuit in this.suits) {
+      for (let inumber in this.numbers) {
+        const card = new Card(this.numbers[inumber], this.suits[isuit]);
+        this.addCard(card);
+      }
+    }
+  }  
 }
