@@ -1,0 +1,47 @@
+html, body {
+width: 100%;
+height: 100%;
+font-family: 'Arial';
+}
+
+.hidden {
+display: none;
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+background-image: url('http://azmind.com/wp-content/uploads/2012/09/tileable-wood-patterns-5.jpg');
+}
+
+div.start {
+text-align: center;
+}
+
+div.start form {
+display: inline-block;
+background: white;
+   padding: 25px;
+   border-radius: 6px;
+}
+
+
+// Game
+div.game {
+
+}
+
+
+section.main_wrap {
+display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+article.top p, article.bottom p {
+padding: 15px 20px;
+   background: white;
+}
