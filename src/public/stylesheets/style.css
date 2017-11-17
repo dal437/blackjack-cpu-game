@@ -1,30 +1,30 @@
 html, body {
-width: 100%;
-height: 100%;
-font-family: 'Arial';
+	width: 100%;
+	height: 100%;
+	font-family: 'Arial';
 }
 
 .hidden {
-display: none;
+	display: none;
 }
 
 body {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
-background-image: url('http://azmind.com/wp-content/uploads/2012/09/tileable-wood-patterns-5.jpg');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background-image: url('http://azmind.com/wp-content/uploads/2012/09/tileable-wood-patterns-5.jpg');
 }
 
 div.start {
-text-align: center;
+	text-align: center;
 }
 
 div.start form {
-display: inline-block;
-background: white;
-   padding: 25px;
-   border-radius: 6px;
+	display: inline-block;
+	background: white;
+    padding: 25px;
+    border-radius: 6px;
 }
 
 
@@ -35,13 +35,78 @@ div.game {
 
 
 section.main_wrap {
-display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article.top, article.bottom {
+	margin-bottom: 10px;
 }
 
 article.top p, article.bottom p {
-padding: 15px 20px;
-   background: white;
+	padding: 15px 20px;
+	display: inline-block;
+    background: white;
+    width: 195px;
+}
+
+div.cards_wrap {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+div.cards_wrap > div.card {
+	width: 90px;
+    height: 140px;
+    font-size: 20px;
+    font-weight: 600;
+	background: white;
+	border-radius: 8px;
+	padding: 10px 14px;
+	margin: 0;
+	text-align: left;
+	box-shadow: 1px 1px 3px #333333;
+}
+
+div.cards_wrap > div.card.flipped {
+	background: url('https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-2_grande.png?v=1494193481');
+	background-size: 100% 100%;
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.cards_wrap > div.card:after {
+	font-size: 23px;
+    margin-left: 5px;
+}
+
+div.cards_wrap > div.card.clubs,
+div.cards_wrap > div.card.spades {
+	color: black;
+}
+
+div.cards_wrap > div.card.clubs:after {
+	content: '♣';
+}
+
+div.cards_wrap > div.card.spades:after {
+	content: '♠';
+}
+
+div.cards_wrap > div.card.diamonds,
+div.cards_wrap > div.card.hearts {
+	color: red;
+}
+
+div.cards_wrap > div.card.diamonds:after {
+	content: '♦';
+}
+
+div.cards_wrap > div.card.hearts:after {
+	content: '♥';
 }
